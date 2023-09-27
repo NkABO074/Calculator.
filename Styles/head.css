@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Brains';
+    src: url('/Fonts/JetBrainsMono-1.0.3/web/woff/JetBrainsMono-Regular.woff') format('woff');
+}
+
+header {
+    background-color: rgba(128, 128, 128,0.480);
+   /* padding: 10px;*/
+    display: flex;
+    font-family: 'Brains';
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+    justify-content: space-around;
+}
+
+
+nav {
+    display: flex;
+    /*flex-direction: row;*/    
+    align-items: center;
+    overflow: auto;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 7px;
+}
+a:hover {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 7px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+h1 {
+    font-size: 60px;
+}

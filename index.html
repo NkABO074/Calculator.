@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="Images/CalcICO.svg" type="image/x-icon">
+        <title>Calculator.</title>
+        <meta name="" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/head.css">
+        <link rel="stylesheet" href="Styles/body.css">
+        <link rel="stylesheet" href="Styles/feet.css">
+    </head>
+
+    <header>
+        <div id="title-of-head">
+            <h1><img src="Images/CalcICO.svg" alt=""> Calculator.</h1>
+        </div>
+        <nav>
+                <div id="About-link" ><a href="#" id="openPopup">About</a></div>       
+        </nav>
+        
+    </header>
+    
+
+    <body>
+    
+        <!--Calculator Screen-->
+        <form id="button-form" class="AllKeys">
+        <div id="number-screen">
+            <input type="text" name="" id="Calculator-screen" class="screen" >
+            <!--<input type="text" name="" id="Calculator-result" class="screen" >-->
+        </div>
+                <!---->
+                <br>
+                <!--Del Keys-->
+                <div id="number-cleaning" class="numpad-zone-supp">
+                    <input type="button" value="Clear" class="touchDel" id="clsr">
+                    <input type="button" value="Suppr" class="touchDel" id="del">
+                </div>
+                <!---->
+            <div class="container">
+            <!--Numbers keys-->
+            <div class="calcPartNum">
+                <div id="number-0,8" class="numpad-zone">
+                    
+                    <input type="button" value="0" class="touch" id="zero">
+                    <input type="button" value="9" class="touch" id="nine">
+                    <input type="button" value="8" class="touch" id="heigt">
+                </div>
+
+                <div id="number-7,5" class="numpad-zone">
+                    <input type="button" value="7" class="touch" id="seven">
+                    <input type="button" value="6" class="touch" id="six">
+                    <input type="button" value="5" class="touch" id="five">
+                </div>
+
+                <div id="number-4,2" class="numpad-zone">
+                    <input type="button" value="4" class="touch" id="four">
+                    <input type="button" value="3" class="touch" id="three">
+                    <input type="button" value="2" class="touch" id="two">
+                </div>
+                <div id="number-1" class="numpad-zone" class="touch">
+                    <input type="button" value="π" class="touchConst" id="pi">
+                    <input type="button" value="1" class="touch" id="one">
+                    <input type="button" value="e" class="touchConst" id="eulerNumber">     
+                </div>
+            </div>
+            <!---->
+            
+            <!--Functions & Symbols Keys-->
+            <div class="calcPartFunc">
+                <div id="number-operator" class="numpad-zone">
+                    <input type="button" value="/" class="touch" id="div">
+                    <input type="button" value="*" class="touch" id="mult">
+                    <input type="button" value="!" class="touchFn" id="factorial">
+                    <input type="button" value="eˣ"class="touchFn" id="expTheX">
+                    
+                </div>
+
+                <div id="number-1" class="numpad-zone" class="touch">
+                    <input type="button" value="+" class="touch" id="add">
+                    <input type="button" value="-" class="touch" id="subs">
+                    
+                    <input type="button" value="10ˣ" class="touchFn" id="decimalExp">
+                    <input type="button" value="%" class="touchFn" id="percent">
+                </div>
+
+                <div id="number-2" class="numpad-zone" class="touch">
+                    <input type="button" value="(" class="touch" id="leftPara">
+                    <input type="button" value=")" class="touch" id="rightPara">
+                    <input type="button" value="Ln" class="touchFn" id="NapierLog">
+                    <input type="button" value="Log" class="touchFn" id="decLog">
+                    <input type="button" value="√" class="touchFn" id="squareRoot"> 
+                </div>
+
+                <div id="number-functions" class="numpad-zone">
+                    <input type="button" value="=" class="touchEqual" id="sendResult">
+                    <input type="button" value="Cos" class="touchFn" id="cosinus">
+                    <input type="button" value="Sin" class="touchFn" id="sinus">
+                </div>
+            <!---->
+            </div>
+        </div>
+
+    <!--Popup-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2><img src="Images/CalcICO.svg" alt=""> Calculator.</h2>
+            <p>A simple Scientific calculator webApp.</p>
+            <div><a href="https://github.com/NkABO074/Calculator."><img src="Images/GithubICO.svg" id="git"> Github(Source)</a></div>
+            <div><a href="mailto:nkabo074@gmail.com"><img src="Images/eMailICO.svg" id="mail"> Email</a></div>
+            <br><br>
+            <button id="closePopup" > ⤫ Close </button>
+        </div>
+    </div>
+    <!---->
+       
+    </form>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/keys.js"></script>
+        <script src="scripts/Clean.js" ></script>
+        <script src="scripts/popup.js"></script>
+    </body>
+</html>
