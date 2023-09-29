@@ -9,9 +9,11 @@
         <title>Calculator.</title>
         <meta name="" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="Styles/head.css">
         <link rel="stylesheet" href="Styles/body.css">
         <link rel="stylesheet" href="Styles/feet.css">
+
     </head>
 
     <header>
@@ -21,27 +23,30 @@
         <nav>
                 <div id="About-link" ><a href="#" id="openPopup">About</a></div>       
         </nav>
-        
+        <div>
+        <!--Calculator Screen-->
+        <form id="button-form" class="AllKeys">
+            <div id="number-screen">
+                <input type="text" name="" id="Calculator-screen" class="screen" >
+                <!--<input type="text" name="" id="Calculator-result" class="screen" >-->
+            </div>
+        <!---->
+        </div>
     </header>
     
 
     <body>
     
-        <!--Calculator Screen-->
-        <form id="button-form" class="AllKeys">
-        <div id="number-screen">
-            <input type="text" name="" id="Calculator-screen" class="screen" >
-            <!--<input type="text" name="" id="Calculator-result" class="screen" >-->
-        </div>
-                <!---->
+        
                 <br>
-                <!--Del Keys-->
+               
+            <div class="container">
+                 <!--Del Keys-->
                 <div id="number-cleaning" class="numpad-zone-supp">
                     <input type="button" value="Clear" class="touchDel" id="clsr">
                     <input type="button" value="Suppr" class="touchDel" id="del">
                 </div>
                 <!---->
-            <div class="container">
             <!--Numbers keys-->
             <div class="calcPartNum">
                 <div id="number-0,8" class="numpad-zone">

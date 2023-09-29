@@ -9,13 +9,15 @@
 }
 
 .AllKeys {
-    padding-left: 10%;
-    padding-right: 10%;
-    overflow: auto;
+    /*display: flex;*/
+    padding-left: auto;
+    padding-right: auto;
+    /*overflow: auto;*/
 }
 
 body {
     background-color: rgba(0, 0, 0, 0.800);
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,18 +27,18 @@ body {
     display: flex;
     /*align-content: space-between;*/
     justify-content: center;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 .screen {
     background-color: rgb(10, 22, 0);
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Brains';
-    border:5px solid gray;
+    /*border:5px solid gray;*/
     border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
+    margin: 5px;
+    padding: 2px;
 }
 
 .numpad-zone-supp {
@@ -52,6 +54,7 @@ body {
     /*justify-content: center;*/
     align-content: space-evenly;
 }
+
 /*Basic Key*/
 .touch{
     background-color: rgba(179, 168, 148, 0.415);
@@ -61,7 +64,7 @@ body {
     backdrop-filter: blur(10px);
     color:whitesmoke;
     padding: 15px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 2px;
 }
 .touch:active {
@@ -83,7 +86,7 @@ body {
     /*padding: 15px;*/
     padding-right: 45px;
     padding-left: 45px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 2px;
 }
 .touchEqual:active {
@@ -104,7 +107,7 @@ body {
     backdrop-filter: blur(10px);
     color:whitesmoke;
     padding: 15px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 2px;
 }
 .touchFn:active{
@@ -124,7 +127,7 @@ body {
     backdrop-filter: blur(10px);
     color:rgb(0, 0, 0);
     padding: 15px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 2px;
 }
 .touchDel:active{
@@ -145,7 +148,7 @@ body {
     backdrop-filter: blur(10px);
     color:whitesmoke;
     padding: 15px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 2px;
 }
 .touchConst:active {
@@ -159,9 +162,11 @@ body {
 /**/
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    /*margin-top: 180px;*/
 }
 
 .calcPartFunc {
